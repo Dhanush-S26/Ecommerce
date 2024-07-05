@@ -1,0 +1,328 @@
+*{
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* Awesome fonts */
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.navbar_links{
+    display: flex;
+}
+.navbar_links a{
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.navbar_links a:hover{
+    text-decoration: underline;
+}
+.navbar_links_toggle{
+    display: none;
+    cursor: pointer;
+}
+
+/* Side Navbar */
+.side_navbar{
+    background-color: black;
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    animation: side_navbar 2s ease-in-out;
+    display: none; /* Javascript code to display block when toggle icon is clicked */
+}
+@keyframes side_navbar {
+    0%{
+        transform: translateX(-100%);
+    }
+}
+#xmark{
+    cursor: pointer;
+}
+.side_navbar_link{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.side_navbar_link a{
+    text-decoration: none;
+    color: white;
+}
+.side_navbar_link a:hover{
+   text-decoration: underline;
+}
+
+/* Header Section */
+.header{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+.header_content{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+.header_content button{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+.header_content button:hover{
+    background-color: #808080;
+    color: #FFFFFF;
+}
+.header_image img{
+    width: 300px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Service Section */
+.servive{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+/* Service Guarantee */
+.service_guarantee{
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    justify-content: space-between;
+}
+.service_guarantee_1{
+    width: 30%;
+    background-color: #add8e6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* New Arrivals Section */
+#new_arrivals{
+    padding: 20px;
+}
+.newarrivals{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+.newarrivals_image img{
+    width: 300px;
+    height: 300px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.newarrivals_image{
+    position: relative;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.newarrivals_image button{
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.newarrivals_image button:hover{
+    background-color: #808080;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* News Section */
+.newssection{
+    padding: 20px;
+    text-align: center;
+}
+.news input{
+    width: 95%;
+    margin-top: 10px;
+    font-size: 18px;
+    height: 20px;
+    padding: 10px;
+}
+.news button{
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.538);
+}
+.news button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: #FFFFFF;
+}
+.news p{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Footer Section */
+.footer{
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+.footer h2{
+    margin-bottom: 5px;
+}
+.footer p{
+    font-size: 15px;
+}
+
+/* searchcollections */
+.searchcollections{
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.searchbox{
+    text-align: center;
+    position: relative;
+}
+.searchbox input{
+    width: 80%;
+    height: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.searchbox input::placeholder{
+    position: absolute;
+    left: 20px;
+    font-size: 17px;
+}
+#searchbar{
+    position: absolute;
+    top: 28px;
+    right: 180px;
+}
+.searchcollection img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.searchcollection{
+    text-align: center;
+    padding: 20px;
+    flex-basis: 20%;
+}
+
+/* Contact Us Section */
+.contactus{
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+.contactdetails{
+    padding: 10px;
+    background-color: #e1b382;
+    color: #12343b;
+    width: 60%;
+    font-size: 25px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.contactdetails input{
+    font-size: 25px;
+    padding: 10px;
+    width: 94%;
+    border: none;
+}
+.contactdetails input:focus{
+    outline: none;
+    border-bottom: solid #12343b 2px;
+}
+.contactdetails textarea{
+    font-size: 25px;
+    padding: 10px;
+    height: 200px;
+    width: 94%;
+    margin-top: 5px;
+    border: none;
+}
+.contactdetails textarea:focus{
+    outline: none;
+    border-bottom: solid #12343b 2px;
+}
+.contactdetails button{
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.contactdetails button:hover{
+    background-color: #12343b;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* Media Query */
+@media screen and (max-width:640px){
+    .navbar_links_toggle{
+        display: block;
+    }
+    .navbar_links{
+        display: none;
+    }
+    .service_guarantee{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .service_guarantee_1{
+        width: 90%;
+    }
+    .newarrivals{
+        justify-content: center;
+    }
+    .searchcollection{
+        flex-basis: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+    .searchcollection img{
+        width: 300px;
+        height: 300px;
+    }
+    #searchbar{
+        display: none;
+    }
+}
